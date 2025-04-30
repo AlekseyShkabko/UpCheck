@@ -1,90 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>АвтоДіагноз – OBD2 Консультації</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>АвтоДіагноз – OBD2 Розшифровка</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
       color: #333;
     }
+
     header {
-      background-color: #007BFF;
+      background-color: #0057b8;
       color: white;
-      padding: 40px 20px;
+      padding: 1.5rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
+
+    header img {
+      height: 60px;
+      margin-bottom: 0.5rem;
     }
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
+
+    main {
+      padding: 1rem 2rem;
+      max-width: 600px;
+      margin: auto;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
+
+    h1, h2 {
+      color: #0057b8;
     }
-    .form-section {
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+    p {
+      line-height: 1.6;
     }
-    .form-section input, .form-section textarea, .form-section button {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 6px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
       border: 1px solid #ccc;
-      font-size: 16px;
+      border-radius: 8px;
     }
-    .form-section button {
-      background-color: #007BFF;
+
+    button {
+      padding: 0.8rem;
+      background-color: #0057b8;
       color: white;
       border: none;
+      border-radius: 8px;
+      font-size: 1rem;
       cursor: pointer;
     }
+
+    button:hover {
+      background-color: #004099;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 1rem;
       font-size: 14px;
+      color: #777;
       background-color: #eee;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
+    <!-- ⚙️ Тут можна вставити своє лого. Замінити src на власне посилання -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Car-icon-blue.svg/120px-Car-icon-blue.svg.png" alt="Логотип АвтоДіагноз" />
     <h1>АвтоДіагноз</h1>
-    <p>Швидке розшифрування OBD2 кодів помилок автомобіля</p>
+    <p>Розшифровка OBD2 кодів помилок</p>
   </header>
 
-  <section>
-    <h2>Як це працює</h2>
-    <p>Надішліть нам код помилки (наприклад, P0171), і ми надамо повну розшифровку, можливі причини та поради щодо ремонту.</p>
-    <p>Консультація – від 100 грн. Перший запит – безкоштовно!</p>
-  </section>
+  <main>
+    <section>
+      <h2>Як це працює?</h2>
+      <p>Надішліть нам код помилки (наприклад, P0171), і ми надамо повну розшифровку, можливі причини та поради щодо ремонту.</p>
+      <p><strong>Консультація</strong> від 100 грн. Перший запит — <strong>безкоштовно!</strong></p>
+    </section>
 
-  <section class="form-section">
-    <h2>Надіслати запит</h2>
-    <form action="https://t.me/Shkabko_bot" target="_blank">
-      <input type="text" name="name" placeholder="Ваше ім'я" required>
-      <input type="text" name="code" placeholder="Код помилки (наприклад, P0300)" required>
-      <textarea name="comment" rows="4" placeholder="Коментар або опис ситуації"></textarea>
-      <button type="submit">Відправити в Telegram</button>
-    </form>
-  </section>
+    <section>
+      <h2>Про нас</h2>
+      <p>Ми — команда автоентузіастів з багаторічним досвідом у сфері діагностики автомобілів.  
+      Наша мета — зробити розшифровку кодів помилок доступною кожному водію.  
+      Ми пояснюємо простою мовою складні технічні терміни та допомагаємо з перших хвилин.</p>
+    </section>
 
-  <section>
-    <h2>Контакти</h2>
-    <p>Telegram бот: <a href="https://t.me/Shkabko_bot" target="_blank">@Shkabko_bot</a></p>
-  </section>
+    <section>
+      <h2>Залишити запит</h2>
+      <form action="https://t.me/Shkabko_bot" target="_blank">
+        <input type="text" name="name" placeholder="Ваше імʼя" required />
+        <input type="text" name="code" placeholder="Код помилки (наприклад, P0300)" required />
+        <textarea name="comment" rows="4" placeholder="Коментар або опис ситуації"></textarea>
+        <button type="submit">Надіслати в Telegram</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Контакти</h2>
+      <p>Telegram бот: <a href="https://t.me/Shkabko_bot" target="_blank">@Shkabko_bot</a></p>
+    </section>
+  </main>
 
   <footer>
     © 2025 АвтоДіагноз. Всі права захищено.
