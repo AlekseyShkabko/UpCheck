@@ -1,178 +1,72 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UpCheck — Збільшення продажів у фаст-фуді</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #007bff;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header img {
-      max-height: 60px;
-      margin-bottom: 10px;
-    }
-    header h1 {
-      margin: 10px 0 0;
-      font-size: 36px;
-    }
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #007bff;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: "✅ ";
-    }
-    .pricing-table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 20px;
-    }
-    .pricing-table th,
-    .pricing-table td {
-      border: 1px solid #ddd;
-      padding: 12px;
-    }
-    .pricing-table th {
-      background-color: #007bff;
-      color: white;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    .cta-button {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      padding: 12px 24px;
-      font-size: 16px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 20px;
-    }
-    .cta-button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpCheck — Збільшення середнього чеку</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="upcheck-logo.png" alt="UpCheck Logo">
-    <h1>UpCheck</h1>
-    <p>Збільшення продажів у фаст-фуді: навчання, аудит, меню</p>
-  </header>
+    <header>
+        <h1>Збільшуємо середній чек у фаст-фуді на 20–40% за 30 днів</h1>
+        <p>Аналізуємо, навчаємо, оптимізуємо. Ваші касири почнуть продавати, а не просто обслуговувати.</p>
+        <a href="#form" class="cta-button">Замовити консультацію</a>
+    </header>
 
-  <section>
-    <h2>🚀 Як це працює?</h2>
-    <p>Опис основних етапів співпраці, які допоможуть вашому бізнесу зростати:</p>
+    <section>
+        <h2>Як ми працюємо</h2>
+        <ul>
+            <li>✅ <strong>Аудит:</strong> аналіз роботи касира, логіки меню та показників.</li>
+            <li>✅ <strong>Меню:</strong> оптимізація під продаж.</li>
+            <li>✅ <strong>Скрипти:</strong> що і коли казати клієнтам.</li>
+            <li>✅ <strong>Навчання:</strong> онлайн або офлайн з практикою.</li>
+            <li>✅ <strong>Підтримка:</strong> щотижневий аналіз і мотивація.</li>
+        </ul>
+    </section>
 
-    <h3>🔍 Етап 1: Аудит торгової точки (ТТ)</h3>
-    <ul>
-      <li>Спостереження за роботою касирів</li>
-      <li>Аналіз середнього чеку та кількості позицій</li>
-      <li>Перевірка ефективності продажів «допів», комбо</li>
-      <li>Аналіз меню на зручність, логіку, прибутковість</li>
-    </ul>
-    <p><strong>✅ Результат:</strong> чіткий звіт із зонами росту та рекомендаціями</p>
+    <section class="animated">
+        <h2>Кейси</h2>
+        <p><strong>PizzaSpot:</strong> 128₴ → <span class="number">163₴</span> за 3 тижні</p>
+        <p><strong>DonerPlus:</strong> 105₴ → <span class="number">146₴</span>, стабільні допродажі</p>
+    </section>
 
-    <h3>🧠 Етап 2: Оптимізація меню</h3>
-    <ul>
-      <li>Перерозподіл товарів за прибутковістю</li>
-      <li>Пропозиції щодо ребрендингу меню</li>
-      <li>Візуалізація акцентів для касира та клієнта</li>
-    </ul>
-    <p><strong>✅ Результат:</strong> меню, що продає саме себе</p>
+    <section class="animated">
+        <h2>Отримайте PDF “10 фраз для касира”</h2>
+        <p><em>PDF буде доступний незабаром</em></p>
+    </section>
 
-    <h3>🗣️ Етап 3: Скрипти продажів</h3>
-    <ul>
-      <li>Готові фрази для касирів: апсел, комбо, заміна</li>
-      <li>Робота з відмовами: "просто каву", "нічого більше"</li>
-      <li>Поводження в черзі, при напливі, реакція на ситуації</li>
-    </ul>
-    <p><strong>✅ Результат:</strong> касири впевнені, швидкі, ефективні</p>
+    <section id="form" class="animated">
+        <h2>Замовити консультацію</h2>
+        <form onsubmit="sendTelegram(); return false;">
+            <input type="text" id="name" placeholder="Ваше ім’я" required><br>
+            <input type="text" id="contact" placeholder="Телефон або Telegram" required><br>
+            <input type="text" id="place" placeholder="Назва закладу" required><br>
+            <button type="submit">Надіслати заявку</button>
+            <p id="status"></p>
+        </form>
+    </section>
 
-    <h3>🎓 Етап 4: Тренінг касирів</h3>
-    <ul>
-      <li>1–2 год онлайн або офлайн</li>
-      <li>Рольові ситуації, реакції, робота зі швидкістю</li>
-      <li>Інтерактив, живі приклади, гумор</li>
-    </ul>
-    <p><strong>✅ Результат:</strong> касири мотивовані, готові працювати по-новому</p>
+    <footer>
+        <p>Пишіть у <a href="https://t.me/Shkabko" target="_blank">Telegram @Shkabko</a></p>
+    </footer>
 
-    <h3>🔄 Етап 5: Підтримка після навчання</h3>
-    <ul>
-      <li>Телеграм-група для менеджерів і касирів</li>
-      <li>Щомісячний аналіз результатів</li>
-      <li>Регулярні поради, фідбеки, оновлення скриптів</li>
-    </ul>
-    <p><strong>✅ Результат:</strong> зростання середнього чеку, постійна мотивація</p>
+<script>
+function sendTelegram() {
+    const name = document.getElementById('name').value;
+    const contact = document.getElementById('contact').value;
+    const place = document.getElementById('place').value;
+    const message = `📥 Нова заявка!\n👤 Ім’я: ${name}\n📞 Контакт: ${contact}\n🏪 Заклад: ${place}`;
 
-    <a href="https://t.me/Shkabko" class="cta-button" target="_blank">Зв'язатись у Telegram</a>
-  </section>
+    const token = "YOUR_BOT_TOKEN";
+    const chat_id = "YOUR_CHAT_ID";
+    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${encodeURIComponent(message)}`;
 
-  <section>
-    <h2>💼 Формат співпраці:</h2>
-    <p>Одноразовий аудит + навчання<br>
-    АБО повний пакет <strong>"Все включено"</strong> (1–3 місяці)</p>
-  </section>
-
-  <section>
-    <h2>💰 Орієнтовна вартість:</h2>
-    <table class="pricing-table">
-      <tr><th>Послуга</th><th>Вартість</th></tr>
-      <tr><td>Аудит ТТ</td><td>від 100$</td></tr>
-      <tr><td>Скрипти + оптимізація меню</td><td>від 150$</td></tr>
-      <tr><td>Тренінг касирів</td><td>від 200$</td></tr>
-      <tr><td>Підтримка 1 місяць</td><td>від 100$</td></tr>
-      <tr><td><strong>⭐ Пакет "Все включено"</strong></td><td><strong>від 500$</strong></td></tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>✅ Чому саме UpCheck?</h2>
-    <ul>
-      <li>Більше 10 років досвіду у сфері фаст-фуду</li>
-      <li>Прості рішення, що працюють вже з першого тижня</li>
-      <li>Постійна підтримка та рішення "під ключ"</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p><strong>Контакти:</strong><br>
-      ✉️ Alelseyshk@icloud.com<br>
-      💬 Telegram: <a href="https://t.me/Shkabko" target="_blank">@Shkabko</a><br>
-      📱 Телефон: +380501070219
-    </p>
-    <p>🎯 UpCheck — підсилимо ваш фаст-фуд системним зростанням!</p>
-  </footer>
+    fetch(url).then(response => {
+        document.getElementById("status").innerText = "✅ Заявку надіслано!";
+    }).catch(error => {
+        document.getElementById("status").innerText = "❌ Помилка надсилання.";
+    });
+}
+</script>
 </body>
 </html>
